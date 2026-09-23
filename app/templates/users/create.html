@@ -1,11 +1,17 @@
 {% extends "layouts/base.html" %}
 {% block title %}Create User{% endblock %}
+{% block page_title %}Create User{% endblock %}
 
 {% block content %}
 <div class="row">
     <div class="col-lg-8 col-xl-7 mx-auto">
-        <h1 class="h3 mb-3">Create User</h1>
-        <div class="card shadow-sm p-4">
+        <div class="page-header">
+            <div>
+                <h1>Create User</h1>
+                <p class="page-subtitle">Add a new account and assign it a role.</p>
+            </div>
+        </div>
+        <div class="card p-4">
             {% include "users/_form.html" %}
         </div>
     </div>

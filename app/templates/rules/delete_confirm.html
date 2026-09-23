@@ -1,27 +1,28 @@
 {% extends "layouts/base.html" %}
 {% block title %}Delete Disease{% endblock %}
+{% block page_title %}Delete Disease{% endblock %}
 
 {% block content %}
 <div class="row justify-content-center">
     <div class="col-md-6">
-        <div class="card border-danger">
-            <div class="card-header bg-danger text-white">
+        <div class="card">
+            <div class="card-header bg-danger text-white d-flex align-items-center gap-2">
+                <i class="bi bi-exclamation-triangle"></i>
                 <h5 class="mb-0">Confirm Delete</h5>
             </div>
-            <div class="card-body">
+            <div class="card-body p-4">
                 <p>
                     Are you sure you want to delete disease
                     <strong>{{ rule.name }}</strong>?
                 </p>
 
-                <form method="post">
+                <form method="post" class="d-flex gap-2 pt-2">
                     {{ form.hidden_tag() }}
 
                     <button type="submit" class="btn btn-danger">
-                        Delete
+                        <i class="bi bi-trash"></i> Delete
                     </button>
-                    <a href="{{ url_for('rules.detail', rule_id=rule.id) }}"
-                       class="btn btn-secondary">
+                    <a href="{{ url_for('rules.detail', rule_id=rule.id) }}" class="btn btn-secondary">
                         Cancel
                     </a>
                 </form>
