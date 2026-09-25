@@ -1,0 +1,11 @@
+{
+    "cSpell.words": [
+        "DEEPSEEK",
+        "Werkzeug"
+    ],
+    "python.testing.pytestArgs": [
+        "Skin-Disease-Diagnosis-System"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
