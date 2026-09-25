@@ -1,4 +1,16 @@
 {
+<<<<<<< HEAD
+    "cSpell.words": [
+        "DEEPSEEK",
+        "Werkzeug"
+    ],
+    "python.testing.pytestArgs": [
+        "Skin-Disease-Diagnosis-System"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+=======
     "python-envs.pythonProjects": [],
     "liveServer.settings.port": 5501
+>>>>>>> 9bad5c2003bed6505b3d75567bfdcd08f6f67dc5
 }
